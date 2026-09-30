@@ -1,0 +1,1283 @@
+[
+ {
+  "case": 0,
+  "inquiry_id": "bybit-de",
+  "label": "Bybit EU custody + fiat exchange in Germany",
+  "why": "both readers agree, identity current, website listed",
+  "register_tx": "0x187cf14a2aa87511b96250c1df9ba3a6b8e872f9d746f8917efe8567f3b9b472",
+  "attest_tx": "0x0f2797eff305cb9f01d038e940bdf89d0d096f95d89561edfb20768edecd2811",
+  "votes": [
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "AGREE"
+  ],
+  "verdict": "AUTHORISED",
+  "reasons": [],
+  "coverage": {
+   "a": "YES",
+   "c": "YES"
+  },
+  "entity_name": "Bybit EU GmbH",
+  "restriction_evidence": "",
+  "llm": [
+   {
+    "evidence": null,
+    "restricts": false,
+    "row": 2,
+    "services": {
+     "a": true,
+     "c": true
+    }
+   }
+  ],
+  "facts": {
+   "as_of": "2026-09-30",
+   "entries": [
+    {
+     "authorised_on": "2025-05-28",
+     "authority": "Austrian Financial Market Authority (FMA)",
+     "comment": "",
+     "commercial_name": "Bybit",
+     "countries": [
+      "AT",
+      "BE",
+      "BG",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "ES",
+      "FI",
+      "FR",
+      "GR",
+      "HR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LI",
+      "LT",
+      "LU",
+      "LV",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SE",
+      "SI",
+      "SK"
+     ],
+     "countries_unrecognised": [],
+     "det": {
+      "a": "YES",
+      "c": "YES"
+     },
+     "end_date": "",
+     "home_state": "AT",
+     "name": "Bybit EU GmbH",
+     "row": 2,
+     "services_text": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
+     "status": "ACTIVE",
+     "website_hosts": [
+      "bybit.eu"
+     ]
+    }
+   ],
+   "entries_matched": 1,
+   "gleif": {
+    "entity_status": "ACTIVE",
+    "http": 200,
+    "legal_name": "Bybit EU GmbH",
+    "lei": "5299005V5GBSN2A4C303",
+    "registration_status": "ISSUED",
+    "successor_lei": ""
+   },
+   "lei": "5299005V5GBSN2A4C303",
+   "llm_needed": true,
+   "member_state": "DE",
+   "register_as_of": "2026-09-22",
+   "register_http": 200,
+   "register_ok": true,
+   "register_rows": 362,
+   "services": "ac",
+   "warning_list_http": 200,
+   "warning_list_ok": true,
+   "warning_list_rows": 173,
+   "warnings": [],
+   "website": "bybit.eu",
+   "website_listed": true
+  },
+  "checked_at": "2026-09-30T14:13:56.133876+00:00"
+ },
+ {
+  "case": 1,
+  "inquiry_id": "bybit-mt",
+  "label": "Bybit EU custody in Malta",
+  "why": "authorised, but not passported to Malta",
+  "register_tx": "0x7d05164df6bd6e054b4f046e6522f137ab7229c4e120fbd14de79a1744c5c131",
+  "attest_tx": "0x257f930850f2b30a66b812ccf46db4b9e3d6657f90b8699de4f95b43be45647e",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "verdict": "NOT_AUTHORISED",
+  "reasons": [
+   "service_not_covered:a"
+  ],
+  "coverage": {
+   "a": "NO"
+  },
+  "entity_name": "Bybit EU GmbH",
+  "restriction_evidence": "",
+  "llm": [
+   {
+    "evidence": null,
+    "restricts": false,
+    "row": 2,
+    "services": {
+     "a": true
+    }
+   }
+  ],
+  "facts": {
+   "as_of": "2026-09-30",
+   "entries": [
+    {
+     "authorised_on": "2025-05-28",
+     "authority": "Austrian Financial Market Authority (FMA)",
+     "comment": "",
+     "commercial_name": "Bybit",
+     "countries": [
+      "AT",
+      "BE",
+      "BG",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "ES",
+      "FI",
+      "FR",
+      "GR",
+      "HR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LI",
+      "LT",
+      "LU",
+      "LV",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SE",
+      "SI",
+      "SK"
+     ],
+     "countries_unrecognised": [],
+     "det": {
+      "a": "YES"
+     },
+     "end_date": "",
+     "home_state": "AT",
+     "name": "Bybit EU GmbH",
+     "row": 2,
+     "services_text": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
+     "status": "ACTIVE",
+     "website_hosts": [
+      "bybit.eu"
+     ]
+    }
+   ],
+   "entries_matched": 1,
+   "gleif": {
+    "entity_status": "ACTIVE",
+    "http": 200,
+    "legal_name": "Bybit EU GmbH",
+    "lei": "5299005V5GBSN2A4C303",
+    "registration_status": "ISSUED",
+    "successor_lei": ""
+   },
+   "lei": "5299005V5GBSN2A4C303",
+   "llm_needed": true,
+   "member_state": "MT",
+   "register_as_of": "2026-09-22",
+   "register_http": 200,
+   "register_ok": true,
+   "register_rows": 362,
+   "services": "a",
+   "warning_list_http": 200,
+   "warning_list_ok": true,
+   "warning_list_rows": 173,
+   "warnings": [],
+   "website": "",
+   "website_listed": null
+  },
+  "checked_at": "2026-09-30T14:14:29.838765+00:00"
+ },
+ {
+  "case": 2,
+  "inquiry_id": "hpb-hr",
+  "label": "HPB custody in Croatia",
+  "why": "regulator comment limits it to one fund",
+  "register_tx": "0x8fe4fd2faa52beb65b64bcc99c5fc330d955f712f19cf6faed63285ea293323c",
+  "attest_tx": "0xcc26619bdb276380041be3604c441778f08bb0982061dea9dd381e34711d6b71",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "verdict": "AUTHORISED_RESTRICTED",
+  "reasons": [
+   "regulator_comment_restricts:row_229"
+  ],
+  "coverage": {
+   "a": "YES"
+  },
+  "entity_name": "HRVATSKA POŠTANSKA BANKA, dioničko društvo",
+  "restriction_evidence": "The crypto-asset services are limited solely to a Passive Digital Assets (PDA) AIF",
+  "llm": [
+   {
+    "evidence": "The crypto-asset services are limited solely to a Passive Digital Assets (PDA) AIF",
+    "restricts": true,
+    "row": 229,
+    "services": {
+     "a": true
+    }
+   }
+  ],
+  "facts": {
+   "as_of": "2026-09-30",
+   "entries": [
+    {
+     "authorised_on": "2026-06-16",
+     "authority": "Croatian National Bank",
+     "comment": "The crypto-asset services are limited solely to a Passive Digital Assets (PDA) AIF",
+     "commercial_name": "HPB d.d.",
+     "countries": [
+      "HR"
+     ],
+     "countries_unrecognised": [],
+     "det": {
+      "a": "YES"
+     },
+     "end_date": "",
+     "home_state": "HR",
+     "name": "Hrvatska poštanska banka d.d.",
+     "row": 229,
+     "services_text": "a. providing custody and administration of crypto-assets on behalf of clients",
+     "status": "ACTIVE",
+     "website_hosts": [
+      "hpb.hr"
+     ]
+    }
+   ],
+   "entries_matched": 1,
+   "gleif": {
+    "entity_status": "ACTIVE",
+    "http": 200,
+    "legal_name": "HRVATSKA POŠTANSKA BANKA, dioničko društvo",
+    "lei": "529900D5G4V6THXC5P79",
+    "registration_status": "ISSUED",
+    "successor_lei": ""
+   },
+   "lei": "529900D5G4V6THXC5P79",
+   "llm_needed": true,
+   "member_state": "HR",
+   "register_as_of": "2026-09-22",
+   "register_http": 200,
+   "register_ok": true,
+   "register_rows": 362,
+   "services": "a",
+   "warning_list_http": 200,
+   "warning_list_ok": true,
+   "warning_list_rows": 173,
+   "warnings": [],
+   "website": "",
+   "website_listed": null
+  },
+  "checked_at": "2026-09-30T14:14:52.730306+00:00"
+ },
+ {
+  "case": 3,
+  "inquiry_id": "blueemi-lt",
+  "label": "BLUE EMI custody in Lithuania",
+  "why": "regulator comment limits it to its own e-money token",
+  "register_tx": "0xd2086ef1b3a67b473977ca8a8563dd863ffda0bdd2fca19924081930616e0b65",
+  "attest_tx": "0x0e910848db826fd00001cace2f8f3c476c38816037d46bcd82ff8ec8f4927600",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "IDLE"
+  ],
+  "verdict": "AUTHORISED_RESTRICTED",
+  "reasons": [
+   "regulator_comment_restricts:row_269"
+  ],
+  "coverage": {
+   "a": "YES"
+  },
+  "entity_name": "UAB BLUE EMI LT",
+  "restriction_evidence": "CASP services are provided under Article 60(4) of MiCA, in relation to own issued EMT called BLUEUR",
+  "llm": [
+   {
+    "evidence": "CASP services are provided under Article 60(4) of MiCA, in relation to own issued EMT called BLUEUR",
+    "restricts": true,
+    "row": 269,
+    "services": {
+     "a": true
+    }
+   }
+  ],
+  "facts": {
+   "as_of": "2026-09-30",
+   "entries": [
+    {
+     "authorised_on": "2025-05-13",
+     "authority": "Bank of Lithuania (LSC)",
+     "comment": "CASP services are provided under Article 60(4) of MiCA, in relation to own issued EMT called BLUEUR",
+     "commercial_name": "BLUE EMI",
+     "countries": [],
+     "countries_unrecognised": [],
+     "det": {
+      "a": "YES"
+     },
+     "end_date": "",
+     "home_state": "LT",
+     "name": "UAB BLUE EMI LT",
+     "row": 269,
+     "services_text": "a. providing custody and administration of crypto-assets on behalf of clients",
+     "status": "ACTIVE",
+     "website_hosts": [
+      "blueemi.com"
+     ]
+    }
+   ],
+   "entries_matched": 1,
+   "gleif": {
+    "entity_status": "ACTIVE",
+    "http": 200,
+    "legal_name": "UAB BLUE EMI LT",
+    "lei": "254900XFMACGD0L7AI73",
+    "registration_status": "ISSUED",
+    "successor_lei": ""
+   },
+   "lei": "254900XFMACGD0L7AI73",
+   "llm_needed": true,
+   "member_state": "LT",
+   "register_as_of": "2026-09-22",
+   "register_http": 200,
+   "register_ok": true,
+   "register_rows": 362,
+   "services": "a",
+   "warning_list_http": 200,
+   "warning_list_ok": true,
+   "warning_list_rows": 173,
+   "warnings": [],
+   "website": "",
+   "website_listed": null
+  },
+  "checked_at": "2026-09-30T14:15:20.895366+00:00"
+ },
+ {
+  "case": 4,
+  "inquiry_id": "northcrypto-fi",
+  "label": "NorthCrypto custody in Finland",
+  "why": "comment is administrative ('Passporting information updated')",
+  "register_tx": "0xfcea6addd245eab3d4e7455c7110cc2ffd0201951e039cb17120299eef15f256",
+  "attest_tx": "0xdd36bb4871fc926a31bb2215326d2ac3ebe1b6f3fe49ad3ae2d21119569940bd",
+  "votes": [
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE"
+  ],
+  "verdict": "AUTHORISED",
+  "reasons": [],
+  "coverage": {
+   "a": "YES"
+  },
+  "entity_name": "NorthCrypto Oy",
+  "restriction_evidence": "",
+  "llm": [
+   {
+    "evidence": null,
+    "restricts": false,
+    "row": 182,
+    "services": {
+     "a": true
+    }
+   }
+  ],
+  "facts": {
+   "as_of": "2026-09-30",
+   "entries": [
+    {
+     "authorised_on": "2025-11-25",
+     "authority": "Finanssivalvonta (FIN-FSA)",
+     "comment": "Passporting information updated",
+     "commercial_name": "NorthCrypto",
+     "countries": [
+      "FI",
+      "NO",
+      "SE"
+     ],
+     "countries_unrecognised": [],
+     "det": {
+      "a": "YES"
+     },
+     "end_date": "",
+     "home_state": "FI",
+     "name": "NorthCrypto Oy",
+     "row": 182,
+     "services_text": "a. providing custody and administration of crypto-assets on behalf of clients e. execution of orders for crypto-assets on behalf of clients g. reception and transmission of orders for crypto-assets on behalf of clients j. providing transfer services for crypto-assets on behalf of clients",
+     "status": "ACTIVE",
+     "website_hosts": [
+      "northcrypto.com"
+     ]
+    }
+   ],
+   "entries_matched": 1,
+   "gleif": {
+    "entity_status": "ACTIVE",
+    "http": 200,
+    "legal_name": "NorthCrypto Oy",
+    "lei": "743700CHRVVP342JOA67",
+    "registration_status": "ISSUED",
+    "successor_lei": ""
+   },
+   "lei": "743700CHRVVP342JOA67",
+   "llm_needed": true,
+   "member_state": "FI",
+   "register_as_of": "2026-09-22",
+   "register_http": 200,
+   "register_ok": true,
+   "register_rows": 362,
+   "services": "a",
+   "warning_list_http": 200,
+   "warning_list_ok": true,
+   "warning_list_rows": 173,
+   "warnings": [],
+   "website": "northcrypto.com",
+   "website_listed": true
+  },
+  "checked_at": "2026-09-30T14:15:59.677611+00:00"
+ },
+ {
+  "case": 5,
+  "inquiry_id": "scheich-i",
+  "label": "Bankhaus Scheich portfolio management",
+  "why": "letters shifted against descriptions - the LLM alone can't grant it",
+  "register_tx": "0xaacdef6b768cb7b63c449e615a6a06bf6ecea708c91ecc70a1090a352f4e6c63",
+  "attest_tx": "0xf8353ab7fe455aa4724a8b2e887f40a7c860f802b221fda00b2d7a6e3f2e3a10",
+  "votes": [
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "AGREE"
+  ],
+  "verdict": "UNVERIFIED",
+  "reasons": [
+   "service_ambiguous:i"
+  ],
+  "coverage": {
+   "i": "AMBIGUOUS"
+  },
+  "entity_name": "Bankhaus Scheich Wertpapierspezialist AG",
+  "restriction_evidence": "",
+  "llm": [
+   {
+    "evidence": null,
+    "restricts": false,
+    "row": 75,
+    "services": {
+     "i": true
+    }
+   }
+  ],
+  "facts": {
+   "as_of": "2026-09-30",
+   "entries": [
+    {
+     "authorised_on": "2025-08-07",
+     "authority": "Federal Financial Supervisory Authority (BaFin)",
+     "comment": "",
+     "commercial_name": "Bankhaus Scheich Wertpapierspezialist AG",
+     "countries": [
+      "DE"
+     ],
+     "countries_unrecognised": [],
+     "det": {
+      "i": "AMBIGUOUS"
+     },
+     "end_date": "",
+     "home_state": "DE",
+     "name": "Bankhaus Scheich Wertpapierspezialist AG",
+     "row": 75,
+     "services_text": "c. exchange of crypto-assets for funds|c. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|e. placing of crypto-assets|f.reception and transmission of orders for crypto-assets on behalf of clients|g. providing advice on crypto-assets |h. providing portfolio management on crypto-assets",
+     "status": "ACTIVE",
+     "website_hosts": [
+      "bankhaus-scheich.de"
+     ]
+    }
+   ],
+   "entries_matched": 1,
+   "gleif": {
+    "entity_status": "ACTIVE",
+    "http": 200,
+    "legal_name": "Bankhaus Scheich Wertpapierspezialist AG",
+    "lei": "54930079HJ1JTMKTW637",
+    "registration_status": "ISSUED",
+    "successor_lei": ""
+   },
+   "lei": "54930079HJ1JTMKTW637",
+   "llm_needed": true,
+   "member_state": "DE",
+   "register_as_of": "2026-09-22",
+   "register_http": 200,
+   "register_ok": true,
+   "register_rows": 362,
+   "services": "i",
+   "warning_list_http": 200,
+   "warning_list_ok": true,
+   "warning_list_rows": 173,
+   "warnings": [],
+   "website": "",
+   "website_listed": null
+  },
+  "checked_at": "2026-09-30T14:16:27.802228+00:00"
+ },
+ {
+  "case": 6,
+  "inquiry_id": "bitpanda-listed-lei",
+  "label": "Bitpanda under the LEI ESMA lists",
+  "why": "GLEIF retired that LEI (successor exists)",
+  "register_tx": "0xdaabc589f8ccfd2e82602ba6fe52ebdedf818ee4cde4d964b6e637c29505ddec",
+  "attest_tx": "0x7662265e1d166a98de7b1db12cdd3aff1c0c838ae2a6a67c33959b85ea5866b5",
+  "votes": [
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "AGREE"
+  ],
+  "verdict": "UNVERIFIED",
+  "reasons": [
+   "lei_not_current:RETIRED/INACTIVE:successor_98450086582EV2FFC109"
+  ],
+  "coverage": {
+   "a": "YES"
+  },
+  "entity_name": "Bitpanda GmbH",
+  "restriction_evidence": "",
+  "llm": [
+   {
+    "evidence": null,
+    "restricts": false,
+    "row": 1,
+    "services": {
+     "a": true
+    }
+   }
+  ],
+  "facts": {
+   "as_of": "2026-09-30",
+   "entries": [
+    {
+     "authorised_on": "2025-04-09",
+     "authority": "Austrian Financial Market Authority (FMA)",
+     "comment": "",
+     "commercial_name": "Bitpanda",
+     "countries": [
+      "AT",
+      "BE",
+      "BG",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "ES",
+      "FI",
+      "FR",
+      "GR",
+      "HR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LI",
+      "LT",
+      "LU",
+      "LV",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SE",
+      "SI",
+      "SK"
+     ],
+     "countries_unrecognised": [],
+     "det": {
+      "a": "YES"
+     },
+     "end_date": "",
+     "home_state": "AT",
+     "name": "Bitpanda GmbH",
+     "row": 1,
+     "services_text": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
+     "status": "ACTIVE",
+     "website_hosts": [
+      "bitpanda.com"
+     ]
+    }
+   ],
+   "entries_matched": 1,
+   "gleif": {
+    "entity_status": "INACTIVE",
+    "http": 200,
+    "legal_name": "Bitpanda GmbH",
+    "lei": "5493007WZ7IFULIL8G21",
+    "registration_status": "RETIRED",
+    "successor_lei": "98450086582EV2FFC109"
+   },
+   "lei": "5493007WZ7IFULIL8G21",
+   "llm_needed": true,
+   "member_state": "AT",
+   "register_as_of": "2026-09-22",
+   "register_http": 200,
+   "register_ok": true,
+   "register_rows": 362,
+   "services": "a",
+   "warning_list_http": 200,
+   "warning_list_ok": true,
+   "warning_list_rows": 173,
+   "warnings": [],
+   "website": "",
+   "website_listed": null
+  },
+  "checked_at": "2026-09-30T14:16:58.504479+00:00"
+ },
+ {
+  "case": 7,
+  "inquiry_id": "bitpanda-current-lei",
+  "label": "Bitpanda under its current LEI",
+  "why": "ESMA's register doesn't list the current LEI",
+  "register_tx": "0x0b5411ea8951261b34338bf6bd63f4ce3023b06e35acf523f03e3f0f211552e9",
+  "attest_tx": "0x899126f131051564122bbc84a02c6469770f1ff342427352bdc413baf5f3489b",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "AGREE",
+   "IDLE"
+  ],
+  "verdict": "NOT_LISTED",
+  "reasons": [
+   "lei_not_in_register"
+  ],
+  "coverage": {},
+  "entity_name": "Bitpanda GmbH",
+  "restriction_evidence": "",
+  "llm": [],
+  "facts": {
+   "as_of": "2026-09-30",
+   "entries": [],
+   "entries_matched": 0,
+   "gleif": {
+    "entity_status": "ACTIVE",
+    "http": 200,
+    "legal_name": "Bitpanda GmbH",
+    "lei": "98450086582EV2FFC109",
+    "registration_status": "ISSUED",
+    "successor_lei": ""
+   },
+   "lei": "98450086582EV2FFC109",
+   "llm_needed": false,
+   "member_state": "AT",
+   "register_as_of": "2026-09-22",
+   "register_http": 200,
+   "register_ok": true,
+   "register_rows": 362,
+   "services": "a",
+   "warning_list_http": 200,
+   "warning_list_ok": true,
+   "warning_list_rows": 173,
+   "warnings": [],
+   "website": "",
+   "website_listed": null
+  },
+  "checked_at": "2026-09-30T14:17:26.840838+00:00"
+ },
+ {
+  "case": 8,
+  "inquiry_id": "decubate-nl",
+  "label": "Decubate placing in the Netherlands",
+  "why": "authorisation withdrawn 26/03/2026",
+  "register_tx": "0x91f77e13a29ed4a9ca756cb2d6f429213751652a37f075c0425efe559a97144c",
+  "attest_tx": "0x954daca96df2a4e7b690e6ba59e30c1ca628cb1bb40e86268b4a5259eb7d98a2",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE"
+  ],
+  "verdict": "WITHDRAWN",
+  "reasons": [
+   "authorisation_withdrawn"
+  ],
+  "coverage": {},
+  "entity_name": "Decubate B.V.",
+  "restriction_evidence": "",
+  "llm": [],
+  "facts": {
+   "as_of": "2026-09-30",
+   "entries": [
+    {
+     "authorised_on": "2025-07-31",
+     "authority": "Netherlands Authority for the Financial Markets (AFM)",
+     "comment": "Voluntary request to revoke authorisation by the entity",
+     "commercial_name": "Decubate B.V.",
+     "countries": [
+      "NL",
+      "AT",
+      "BE",
+      "BG",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "GR",
+      "ES",
+      "FI",
+      "FR",
+      "HR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LI",
+      "LT",
+      "LU",
+      "LV",
+      "MT",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SE",
+      "SI",
+      "SK"
+     ],
+     "countries_unrecognised": [],
+     "det": {
+      "f": "YES"
+     },
+     "end_date": "26/03/2026",
+     "home_state": "NL",
+     "name": "Decubate B.V.",
+     "row": 327,
+     "services_text": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets",
+     "status": "WITHDRAWN",
+     "website_hosts": [
+      "decubate.com",
+      "platform.decubate.com"
+     ]
+    }
+   ],
+   "entries_matched": 1,
+   "gleif": {
+    "entity_status": "ACTIVE",
+    "http": 200,
+    "legal_name": "Decubate B.V.",
+    "lei": "894500ZVOL3A9LO8LN34",
+    "registration_status": "ISSUED",
+    "successor_lei": ""
+   },
+   "lei": "894500ZVOL3A9LO8LN34",
+   "llm_needed": false,
+   "member_state": "NL",
+   "register_as_of": "2026-09-22",
+   "register_http": 200,
+   "register_ok": true,
+   "register_rows": 362,
+   "services": "f",
+   "warning_list_http": 200,
+   "warning_list_ok": true,
+   "warning_list_rows": 173,
+   "warnings": [],
+   "website": "",
+   "website_listed": null
+  },
+  "checked_at": "2026-09-30T14:17:44.513583+00:00"
+ },
+ {
+  "case": 9,
+  "inquiry_id": "bybit-clone",
+  "label": "Bybit's LEI quoted by a look-alike site",
+  "why": "website is not the one the register lists",
+  "register_tx": "0x7519a243f66389286ca91a5d30ef7a1becacc24c2f59b6266c7997fa74d49dcd",
+  "attest_tx": "0x28f6dff1edd56e5cf8324a924a88e9a200bbb8335375d73d2f47c28cdefb4737",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "verdict": "UNVERIFIED",
+  "reasons": [
+   "website_not_in_register"
+  ],
+  "coverage": {
+   "a": "YES"
+  },
+  "entity_name": "Bybit EU GmbH",
+  "restriction_evidence": "",
+  "llm": [
+   {
+    "evidence": null,
+    "restricts": false,
+    "row": 2,
+    "services": {
+     "a": true
+    }
+   }
+  ],
+  "facts": {
+   "as_of": "2026-09-30",
+   "entries": [
+    {
+     "authorised_on": "2025-05-28",
+     "authority": "Austrian Financial Market Authority (FMA)",
+     "comment": "",
+     "commercial_name": "Bybit",
+     "countries": [
+      "AT",
+      "BE",
+      "BG",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "ES",
+      "FI",
+      "FR",
+      "GR",
+      "HR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LI",
+      "LT",
+      "LU",
+      "LV",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SE",
+      "SI",
+      "SK"
+     ],
+     "countries_unrecognised": [],
+     "det": {
+      "a": "YES"
+     },
+     "end_date": "",
+     "home_state": "AT",
+     "name": "Bybit EU GmbH",
+     "row": 2,
+     "services_text": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
+     "status": "ACTIVE",
+     "website_hosts": [
+      "bybit.eu"
+     ]
+    }
+   ],
+   "entries_matched": 1,
+   "gleif": {
+    "entity_status": "ACTIVE",
+    "http": 200,
+    "legal_name": "Bybit EU GmbH",
+    "lei": "5299005V5GBSN2A4C303",
+    "registration_status": "ISSUED",
+    "successor_lei": ""
+   },
+   "lei": "5299005V5GBSN2A4C303",
+   "llm_needed": true,
+   "member_state": "DE",
+   "register_as_of": "2026-09-22",
+   "register_http": 200,
+   "register_ok": true,
+   "register_rows": 362,
+   "services": "a",
+   "warning_list_http": 200,
+   "warning_list_ok": true,
+   "warning_list_rows": 173,
+   "warnings": [],
+   "website": "bybit.eu.secure-login.com",
+   "website_listed": false
+  },
+  "checked_at": "2026-09-30T14:18:02.243892+00:00"
+ },
+ {
+  "case": 10,
+  "inquiry_id": "warned-site",
+  "label": "Bybit's LEI quoted by an ESMA-warned site",
+  "why": "website is on ESMA's non-compliant list",
+  "register_tx": "0x0bc3f4271879ad9db07a353ac382296f1e87dc5c19bdc980ca2ed077524dcd7f",
+  "attest_tx": "0x5d0adcdb3b93779123531d90679fc43e7f2956d99797a4bc773ef33ef45fdf83",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "IDLE",
+   "AGREE"
+  ],
+  "verdict": "WARNING_LISTED",
+  "reasons": [
+   "esma_warning_list:website:bank-bit.com",
+   "website_not_in_register"
+  ],
+  "coverage": {},
+  "entity_name": "Bybit EU GmbH",
+  "restriction_evidence": "",
+  "llm": [],
+  "facts": {
+   "as_of": "2026-09-30",
+   "entries": [
+    {
+     "authorised_on": "2025-05-28",
+     "authority": "Austrian Financial Market Authority (FMA)",
+     "comment": "",
+     "commercial_name": "Bybit",
+     "countries": [
+      "AT",
+      "BE",
+      "BG",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "ES",
+      "FI",
+      "FR",
+      "GR",
+      "HR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LI",
+      "LT",
+      "LU",
+      "LV",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SE",
+      "SI",
+      "SK"
+     ],
+     "countries_unrecognised": [],
+     "det": {
+      "a": "YES"
+     },
+     "end_date": "",
+     "home_state": "AT",
+     "name": "Bybit EU GmbH",
+     "row": 2,
+     "services_text": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
+     "status": "ACTIVE",
+     "website_hosts": [
+      "bybit.eu"
+     ]
+    }
+   ],
+   "entries_matched": 1,
+   "gleif": {
+    "entity_status": "ACTIVE",
+    "http": 200,
+    "legal_name": "Bybit EU GmbH",
+    "lei": "5299005V5GBSN2A4C303",
+    "registration_status": "ISSUED",
+    "successor_lei": ""
+   },
+   "lei": "5299005V5GBSN2A4C303",
+   "llm_needed": false,
+   "member_state": "DE",
+   "register_as_of": "2026-09-22",
+   "register_http": 200,
+   "register_ok": true,
+   "register_rows": 362,
+   "services": "a",
+   "warning_list_http": 200,
+   "warning_list_ok": true,
+   "warning_list_rows": 173,
+   "warnings": [
+    {
+     "authority": "Financial Services and Markets Authority (FSMA)",
+     "decision_date": "29/06/2026",
+     "matched_on": "website:bank-bit.com",
+     "name": "Bank Bit"
+    }
+   ],
+   "website": "bank-bit.com",
+   "website_listed": false
+  },
+  "checked_at": "2026-09-30T14:18:25.493870+00:00"
+ },
+ {
+  "case": 11,
+  "inquiry_id": "etoro-gr",
+  "label": "eToro custody in Greece",
+  "why": "register writes Greece as 'EL'",
+  "register_tx": "0xb1452ccbfc6f8a1a4354974b4dbaa7808bc746b06f5b29e0743130e647954240",
+  "attest_tx": "0x861249fa818c63391cbd457723c9f6d989fdc7a0031657ae72fae0e855707489",
+  "votes": [
+   "IDLE",
+   "AGREE",
+   "AGREE",
+   "AGREE",
+   "IDLE"
+  ],
+  "verdict": "AUTHORISED",
+  "reasons": [],
+  "coverage": {
+   "a": "YES"
+  },
+  "entity_name": "ETORO (EUROPE) LIMITED",
+  "restriction_evidence": "",
+  "llm": [
+   {
+    "evidence": null,
+    "restricts": false,
+    "row": 19,
+    "services": {
+     "a": true
+    }
+   }
+  ],
+  "facts": {
+   "as_of": "2026-09-30",
+   "entries": [
+    {
+     "authorised_on": "2025-01-16",
+     "authority": "Cyprus Securities and Exchange Commission (CySEC)",
+     "comment": "",
+     "commercial_name": "e Toro",
+     "countries": [
+      "AT",
+      "BE",
+      "BG",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "GR",
+      "ES",
+      "FI",
+      "FR",
+      "HR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LI",
+      "LT",
+      "LU",
+      "LV",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SE",
+      "SI",
+      "SK"
+     ],
+     "countries_unrecognised": [],
+     "det": {
+      "a": "YES"
+     },
+     "end_date": "",
+     "home_state": "CY",
+     "name": "eToro (Europe) Ltd",
+     "row": 19,
+     "services_text": "providing custody and administration of crypto-assets on behalf of clients |exchange of crypto-assets for funds |execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients | providing advice on crypto-assets |providing portfolio management on crypto-assets | providing transfer services for crypto-assets on behalf of clients",
+     "status": "ACTIVE",
+     "website_hosts": [
+      "etoro.com"
+     ]
+    }
+   ],
+   "entries_matched": 1,
+   "gleif": {
+    "entity_status": "ACTIVE",
+    "http": 200,
+    "legal_name": "ETORO (EUROPE) LIMITED",
+    "lei": "213800GIFQMSV7HROS23",
+    "registration_status": "ISSUED",
+    "successor_lei": ""
+   },
+   "lei": "213800GIFQMSV7HROS23",
+   "llm_needed": true,
+   "member_state": "GR",
+   "register_as_of": "2026-09-22",
+   "register_http": 200,
+   "register_ok": true,
+   "register_rows": 362,
+   "services": "a",
+   "warning_list_http": 200,
+   "warning_list_ok": true,
+   "warning_list_rows": 173,
+   "warnings": [],
+   "website": "",
+   "website_listed": null
+  },
+  "checked_at": "2026-09-30T14:18:37.997777+00:00"
+ },
+ {
+  "case": 12,
+  "inquiry_id": "coinbase-lu",
+  "label": "Coinbase Luxembourg custody",
+  "why": "register writes its website 'https.//coinbase.com'",
+  "register_tx": "0x9e35fd6f00ff1b59198413a9a6530f531c4097c71cd194779202cea41ce05b66",
+  "attest_tx": "0xf260ec936b1fff8d7ebda133ea405876718b257270e7ed5c7935b4e9a171506e",
+  "votes": [
+   "AGREE",
+   "IDLE",
+   "IDLE",
+   "AGREE",
+   "AGREE"
+  ],
+  "verdict": "AUTHORISED",
+  "reasons": [],
+  "coverage": {
+   "a": "YES"
+  },
+  "entity_name": "Coinbase Luxembourg S.A.",
+  "restriction_evidence": "",
+  "llm": [
+   {
+    "evidence": null,
+    "restricts": false,
+    "row": 272,
+    "services": {
+     "a": true
+    }
+   }
+  ],
+  "facts": {
+   "as_of": "2026-09-30",
+   "entries": [
+    {
+     "authorised_on": "2025-06-20",
+     "authority": "Commission de Surveillance du Secteur Financier (CSSF)",
+     "comment": "",
+     "commercial_name": "Coinbase",
+     "countries": [
+      "AT",
+      "BE",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IS",
+      "IE",
+      "IT",
+      "LV",
+      "LI",
+      "LT",
+      "LU",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SK",
+      "SI",
+      "ES",
+      "SE"
+     ],
+     "countries_unrecognised": [],
+     "det": {
+      "a": "YES"
+     },
+     "end_date": "",
+     "home_state": "LU",
+     "name": "Coinbase Luxembourg S.A.",
+     "row": 272,
+     "services_text": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
+     "status": "ACTIVE",
+     "website_hosts": [
+      "coinbase.com"
+     ]
+    }
+   ],
+   "entries_matched": 1,
+   "gleif": {
+    "entity_status": "ACTIVE",
+    "http": 200,
+    "legal_name": "Coinbase Luxembourg S.A.",
+    "lei": "984500F14CA4571AAC11",
+    "registration_status": "ISSUED",
+    "successor_lei": ""
+   },
+   "lei": "984500F14CA4571AAC11",
+   "llm_needed": true,
+   "member_state": "LU",
+   "register_as_of": "2026-09-22",
+   "register_http": 200,
+   "register_ok": true,
+   "register_rows": 362,
+   "services": "a",
+   "warning_list_http": 200,
+   "warning_list_ok": true,
+   "warning_list_rows": 173,
+   "warnings": [],
+   "website": "coinbase.com",
+   "website_listed": true
+  },
+  "checked_at": "2026-09-30T14:18:55.605843+00:00"
+ }
+]

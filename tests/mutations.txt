@@ -1,0 +1,245 @@
+two-reader rule: LLM alone grants
+---
+                    service_state = _agree(e["det"][letter], "YES" if r["services"][letter] else "NO")
+---
+                    service_state = "YES" if r["services"][letter] else e["det"][letter]
+===
+two-reader rule: det alone grants
+---
+                    service_state = _agree(e["det"][letter], "YES" if r["services"][letter] else "NO")
+---
+                    service_state = e["det"][letter]
+===
+EL alias removed
+---
+COUNTRY_ALIASES = {"EL": "GR"}
+---
+COUNTRY_ALIASES = {}
+===
+home state not implicitly covered
+---
+                if facts["member_state"] == e["home_state"] or facts["member_state"] in e["countries"]:
+---
+                if facts["member_state"] in e["countries"]:
+===
+unrecognised country treated as NO
+---
+                elif e["countries_unrecognised"]:
+                    place = "AMBIGUOUS"
+---
+                elif False:
+                    place = "AMBIGUOUS"
+===
+withdrawal date inclusive broken
+---
+                status = "WITHDRAWN" if end <= today_iso else "ACTIVE"
+---
+                status = "WITHDRAWN" if end < "0000" else "ACTIVE"
+===
+unparseable end date treated as active
+---
+            elif end == "":
+                status = "UNKNOWN"
+---
+            elif end == "":
+                status = "ACTIVE"
+===
+unknown-status row can grant
+---
+                if e["status"] == "UNKNOWN" and row_state == "YES":
+                    row_state = "AMBIGUOUS"
+---
+                if False:
+                    row_state = "AMBIGUOUS"
+===
+warning list ignored
+---
+            findings.append(("WARNING_LISTED", f"esma_warning_list:{w['matched_on']}"))
+---
+            pass
+===
+warning list unavailable ignored
+---
+        findings.append(("UNVERIFIED", f"warning_list_unavailable:{facts['warning_list_http']}"))
+---
+        pass
+===
+retired LEI accepted
+---
+LEI_CURRENT_STATUSES = ("ISSUED", "LAPSED", "PENDING_TRANSFER", "PENDING_ARCHIVAL")
+---
+LEI_CURRENT_STATUSES = ("ISSUED", "LAPSED", "PENDING_TRANSFER", "PENDING_ARCHIVAL", "RETIRED")
+===
+inactive entity accepted
+---
+    elif g["registration_status"] not in LEI_CURRENT_STATUSES or g["entity_status"] != "ACTIVE":
+---
+    elif g["registration_status"] not in LEI_CURRENT_STATUSES:
+===
+gleif 404 ignored
+---
+    if g["http"] == 404:
+        findings.append(("UNVERIFIED", "lei_unknown_to_gleif"))
+---
+    if g["http"] == 404:
+        pass
+===
+website mismatch ignored
+---
+    if facts["website_listed"] is False:
+        findings.append(("UNVERIFIED", "website_not_in_register"))
+---
+    if False:
+        findings.append(("UNVERIFIED", "website_not_in_register"))
+===
+website subdomain check loosened to substring
+---
+    return candidate == listed or candidate.endswith("." + listed)
+---
+    return listed in candidate or candidate in listed
+===
+register typo scheme not tolerated
+---
+    token = re.sub(r"^[a-z][a-z0-9+-]*(?::|\.)//", "", text.strip().lower())
+---
+    token = re.sub(r"^[a-z][a-z0-9+-]*://", "", text.strip().lower())
+===
+restriction grounding removed
+---
+    return "RESTRICTED" if _grounded(reading["evidence"], comment) else "UNGROUNDED"
+---
+    return "RESTRICTED"
+===
+ungrounded restriction ignored
+---
+            elif state == "UNGROUNDED":
+                findings.append(("UNVERIFIED", f"restriction_unquoted:row_{e['row']}"))
+---
+            elif state == "UNGROUNDED":
+                pass
+===
+restricted counts as authorised for consumers
+---
+        if c.verdict != "AUTHORISED":
+            return False
+---
+        if c.verdict not in ("AUTHORISED", "AUTHORISED_RESTRICTED"):
+            return False
+===
+freshness ignored
+---
+        return 0 <= age <= max_age_seconds
+---
+        return True
+===
+malformed LLM true-ish accepted
+---
+            "services": {letter: services.get(letter) is True for letter in letters},
+---
+            "services": {letter: bool(services.get(letter)) for letter in letters},
+===
+d pattern backtracking bug reintroduced
+---
+    "d": r"for other crypto|crypto-assets? for other|between crypto-assets?\b(?! and fiat)",
+---
+    "d": r"for other crypto|crypto-assets? for other|between crypto-assets?(?! and fiat)",
+===
+letters ignored (description only)
+---
+        if not lettered:
+            out[letter] = "YES" if letter in described else "NO"
+---
+        if True:
+            out[letter] = "YES" if letter in described else "NO"
+===
+reshaped register read anyway
+---
+    if any(col not in index for col in required):
+        return [False, index, []]
+---
+    if False:
+        return [False, index, []]
+===
+validator skips facts comparison
+---
+            if leader.get("facts") != my_facts:
+                return False
+---
+            if leader.get("facts") is None:
+                return False
+===
+validator ignores service disagreement
+---
+                if theirs.get("services") != own["services"]:
+                    return False
+---
+                if theirs.get("services") is None:
+                    return False
+===
+validator ignores restriction disagreement
+---
+                if theirs.get("restricts") is not own["restricts"]:
+                    return False
+---
+                if theirs.get("restricts") is None:
+                    return False
+===
+validator skips quote check
+---
+                    if _grounded(theirs.get("evidence"), comment) != _grounded(own["evidence"], comment):
+                        return False
+---
+                    if False:
+                        return False
+===
+validator accepts llm output when not needed
+---
+            if not my_facts["llm_needed"]:
+                return leader["llm"] == []
+---
+            if not my_facts["llm_needed"]:
+                return True
+===
+validator ignores row alignment
+---
+                if not isinstance(theirs, dict) or theirs.get("row") != own["row"]:
+                    return False
+---
+                if not isinstance(theirs, dict):
+                    return False
+===
+LEI checksum not enforced
+---
+        _require(_lei_checksum_ok(normalized_lei), "lei must be a valid 20-character ISO 17442 LEI (checksum failed)")
+---
+        _require(len(normalized_lei) == 20, "lei must be 20 chars")
+===
+non-EEA member state accepted
+---
+        _require(state in EEA, "member_state must be an EU/EEA country code, e.g. DE")
+---
+        _require(len(state) == 2, "member_state must be 2 letters")
+===
+future-dated update counted
+---
+            if register_as_of < last <= today_iso:
+---
+            if register_as_of < last:
+===
+severity order wrong (UNVERIFIED hides NOT_AUTHORISED)
+---
+SEVERITY = ("WARNING_LISTED", "NOT_LISTED", "WITHDRAWN", "NOT_AUTHORISED", "UNVERIFIED",
+---
+SEVERITY = ("WARNING_LISTED", "NOT_LISTED", "WITHDRAWN", "UNVERIFIED", "NOT_AUTHORISED",
+===
+truncation not flagged
+---
+    if facts["entries_matched"] > len(entries):
+---
+    if False:
+===
+GLEIF record id not checked
+---
+    elif g["lei"] != facts["lei"]:
+---
+    elif False:
