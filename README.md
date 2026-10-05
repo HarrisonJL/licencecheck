@@ -136,6 +136,9 @@ python3 scripts/mutation_check.py             # 36/36 mutations killed
 - **LEI is the identity key.** A firm the register lists under a malformed or retired LEI can't be confirmed under its correct one — that's reported (`NOT_LISTED` / `UNVERIFIED` with GLEIF's successor), never papered over.
 - **`AUTHORISED_RESTRICTED` isn't machine-interpretable** — whether a limit matters depends on the use. The consumer view treats it as not authorised; the verbatim limit is recorded for a person to judge.
 - **Warning-list matching is by website host and LEI only.** Most warning-list entries have no LEI, and name matching would flag real firms whose names clones borrow.
+- **Availability is never traded for safety.** Anyone can pay for a fresh check, and the latest check wins. If a source is momentarily unreachable, that check records `UNVERIFIED` (or fails and records nothing), and consumers fail closed until the next good check. A griefer can make a good verdict temporarily unavailable, never a bad one look good, and the next check restores it.
+- **Prompt injection.** Service text is partly written by the firms, and comments by regulators. Everything the LLM reads is framed as untrusted data, and it can only *withhold or restrict*: `AUTHORISED` needs the deterministic reader to agree, so an injected "yes" cannot grant a service.
+- **Inquiry ids are first-come.** Anyone can register an `inquiry_id` before you, with different parameters. Read the immutable record (`get_inquiry`) and pin the parameters you expect rather than trusting an id's name.
 
 ## Repository layout
 
